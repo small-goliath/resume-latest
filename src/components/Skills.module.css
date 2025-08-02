@@ -1,0 +1,27 @@
+/* src/components/Skills.module.css */
+
+.skillGroup {
+  margin-bottom: 1.5rem;
+}
+
+.skillCategory {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.skillList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillItem {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}

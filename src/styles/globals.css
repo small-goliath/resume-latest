@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Custom Resume Variables */
+  --primary-color: #0070f3;
+  --background-color: #fff;
+  --text-color: #333;
+  --light-gray: #eaeaea;
+  --medium-gray: #888;
+  --dark-gray: #444;
+  --card-background: #fafafa;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    /* Dark Mode Custom Resume Variables */
+    --primary-color: #0070f3;
+    --background-color: #121212;
+    --text-color: #eee;
+    --light-gray: #333;
+    --medium-gray: #999;
+    --dark-gray: #ccc;
+    --card-background: #1e1e1e;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
