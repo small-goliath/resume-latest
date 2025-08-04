@@ -7,7 +7,7 @@ type TimelineProps = {
 
 const Timeline = ({ footprints }: TimelineProps) => {
   return (
-    <footer className={styles.footer}>
+    <div className={styles.timelineContainer}>
       <h2 className={styles.sectionTitle}>타임라인</h2>
       <div className={styles.timeline}>
         {footprints.map((footprint, index) => (
@@ -20,7 +20,7 @@ const Timeline = ({ footprints }: TimelineProps) => {
           </div>
         ))}
       </div>
-    </footer>
+    </div>
   );
 };
 

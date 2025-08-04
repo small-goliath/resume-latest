@@ -43,6 +43,7 @@ const Home: NextPage<{ data: ResumeData }> = ({ data }) => {
 
       <Profile profile={data.profile} links={data.links} />
       <Navbar />
+      <Timeline footprints={data.footprints} />
 
       <main className={styles.main}>
         <Section title="교육사항" id="education">
@@ -86,8 +87,6 @@ const Home: NextPage<{ data: ResumeData }> = ({ data }) => {
       <div className={styles.scheduleContainer}>
         <ScheduleClock />
       </div>
-
-      <Timeline footprints={data.footprints} />
     </div>
   );
 };
