@@ -1,4 +1,3 @@
-// src/components/Internships.tsx
 import { Internship as InternshipType } from '../types';
 import styles from './ListComponent.module.css';
 

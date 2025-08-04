@@ -1,4 +1,3 @@
-// src/components/Volunteering.tsx
 import { Volunteering as VolunteeringType } from '../types';
 import styles from './ListComponent.module.css';
 

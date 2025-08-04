@@ -1,5 +1,3 @@
-// src/types/index.ts
-
 export interface Education {
   institution: string;
   category: string;

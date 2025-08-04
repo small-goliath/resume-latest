@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { Activity, Award, Education, Footprint, Internship, Research, ResumeData, Skill, Volunteering } from '../types';
 import styles from './index.module.css';
 
-// Import Components
 import dynamic from 'next/dynamic';
 import ActivitiesComponent from '../components/Activities';
 import AwardsComponent from '../components/Awards';
@@ -22,7 +21,6 @@ const ScheduleClock = dynamic(() => import('../components/ScheduleClock'), {
   ssr: false,
 });
 
-// Helper function to parse JSON from environment variables
 const getEnvJson = <T,>(key: string, defaultValue: T): T => {
   try {
     const value = process.env[key];

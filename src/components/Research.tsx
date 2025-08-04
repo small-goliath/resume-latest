@@ -1,4 +1,3 @@
-// src/components/Research.tsx
 import { Research as ResearchType } from '../types';
 import styles from './ListComponent.module.css';
 

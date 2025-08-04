@@ -1,4 +1,3 @@
-// src/components/Education.tsx
 import { Education as EducationType } from '../types';
 import styles from './ListComponent.module.css';
 

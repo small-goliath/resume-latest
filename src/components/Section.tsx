@@ -1,4 +1,3 @@
-// src/components/Section.tsx
 import styles from './Section.module.css';
 
 const Section = ({ title, children, id }: { title: string; children: React.ReactNode; id: string }) => (

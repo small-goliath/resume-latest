@@ -1,4 +1,3 @@
-// src/components/Activities.tsx
 import { Activity as ActivityType } from '../types';
 import styles from './ListComponent.module.css';
 

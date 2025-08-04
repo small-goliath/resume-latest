@@ -1,4 +1,3 @@
-// src/components/Modal.tsx
 import styles from './Modal.module.css';
 
 type ModalProps = {

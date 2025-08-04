@@ -1,4 +1,3 @@
-// src/components/Skills.tsx
 import { Skill } from '../types';
 import styles from './Skills.module.css';
 

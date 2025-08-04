@@ -1,4 +1,3 @@
-// src/components/Navbar.tsx
 import styles from './Navbar.module.css';
 
 const navItems = [

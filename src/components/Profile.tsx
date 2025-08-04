@@ -1,4 +1,3 @@
-// src/components/Profile.tsx
 import { ResumeData } from '../types';
 import styles from './Profile.module.css';
 

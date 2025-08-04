@@ -1,4 +1,3 @@
-// src/components/PeerReviews.tsx
 import { useState } from 'react';
 import Modal from './Modal';
 import styles from './PeerReviews.module.css';

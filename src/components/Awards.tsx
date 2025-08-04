@@ -1,4 +1,3 @@
-// src/components/Awards.tsx
 import { Award as AwardType } from '../types';
 import styles from './ListComponent.module.css';
 

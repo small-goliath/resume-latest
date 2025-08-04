@@ -1,4 +1,3 @@
-// src/components/Timeline.tsx
 import { Footprint } from '../types';
 import styles from './Timeline.module.css';
 
