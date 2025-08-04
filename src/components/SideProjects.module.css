@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.title a:hover {
+  color: var(--primary-color);
+}
+
+.description {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+  flex-grow: 1;
+}
+
+.status {
+  font-size: 0.9rem;
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  align-self: flex-start;
+}

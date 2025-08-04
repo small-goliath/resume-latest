@@ -37,6 +37,13 @@ export interface Research {
   cdnUrl?: string;
 }
 
+export interface SideProject {
+  title: string;
+  description: string;
+  status: string;
+  link: string;
+}
+
 export interface Footprint {
   company: string;
   role: string;
@@ -62,4 +69,5 @@ export interface ResumeData {
   research: Research[];
   peerReviews: string[];
   footprints: Footprint[];
+  sideProjects: SideProject[];
 }

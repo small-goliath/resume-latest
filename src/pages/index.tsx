@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
-import { Activity, Award, Education, Footprint, Internship, Research, ResumeData, Skill, Volunteering } from '../types';
+import { Activity, Award, Education, Footprint, Internship, Research, ResumeData, SideProject, Skill, Volunteering } from '../types';
 import styles from './index.module.css';
 
 import dynamic from 'next/dynamic';
@@ -13,6 +13,7 @@ import PeerReviewsComponent from '../components/PeerReviews';
 import Profile from '../components/Profile';
 import ResearchComponent from '../components/Research';
 import Section from '../components/Section';
+import SideProjectsComponent from '../components/SideProjects';
 import SkillsComponent from '../components/Skills';
 import Timeline from '../components/Timeline';
 import VolunteeringComponent from '../components/Volunteering';
@@ -77,7 +78,7 @@ const Home: NextPage<{ data: ResumeData }> = ({ data }) => {
         </Section>
         
         <Section title="사이드프로젝트" id="side-projects">
-          <p>현재 준비 중입니다.</p>
+          <SideProjectsComponent items={data.sideProjects} />
         </Section>
 
       </main>
@@ -111,6 +112,7 @@ export const getStaticProps: GetStaticProps = async () => {
     research: getEnvJson<Research[]>('NEXT_PUBLIC_RESEARCH', []),
     peerReviews: getEnvJson<string[]>('NEXT_PUBLIC_PEER_REVIEWS', []),
     footprints: getEnvJson<Footprint[]>('NEXT_PUBLIC_FOOTPRINTS', []),
+    sideProjects: getEnvJson<SideProject[]>('NEXT_PUBLIC_SIDE_PROJECTS', []),
   };
 
   return {
