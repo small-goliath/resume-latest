@@ -114,6 +114,19 @@ JSON 배열 형식으로, 각 동료 평가 이미지 URL을 문자열로 포함
 ]
 ```
 
+**동료 평가 (`NEXT_PUBLIC_SIDE_PROJECTS`)**
+JSON 배열 형식으로, 각 사이드 프로젝트를 갹체로 표현합니다.
+```json
+[
+  {
+    "title": "Autogram",
+    "description": "[AI] SNS 및 블로그 노출 극대화 (SNS 인플루언서 또는 지망생 타겟)",
+    "status": "베타 테스트 중",
+    "link": "https://autogram.kro.kr"
+  }
+]
+```
+
 **경력 타임라인 (`NEXT_PUBLIC_FOOTPRINTS`)**
 JSON 배열 형식으로, 각 경력을 객체로 표현합니다.
 ```json
