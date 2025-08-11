@@ -36,8 +36,8 @@ const Home: NextPage<{ data: ResumeData }> = ({ data }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{data.profile.name}의 이력서</title>
-        <meta name="description" content={`${data.profile.name}의 기술 이력서`} />
+        <title>{data.profile.name}</title>
+        <meta name="description" content={`${data.profile.name}의 자기소개서`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
