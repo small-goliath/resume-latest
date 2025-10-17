@@ -12,6 +12,8 @@ export interface Skill {
 export interface Award {
   awardName: string;
   category: string;
+  certificateImageUrl?: string;
+  link?: string;
 }
 
 export interface Volunteering {
