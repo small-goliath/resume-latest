@@ -93,7 +93,7 @@ const ScheduleClock = () => {
             { text: "회사업무", left: "30%", top: "80%" },
             { text: "자기계발", left: "10%", top: "28%" },
             { text: "퇴근", left: "18%", top: "10%" },
-            { text: "휴식/자기계발", left: "40%", top: "10%" },
+            { text: "휴식/제2외국어", left: "40%", top: "10%" },
         ]);
     }, []);
 
