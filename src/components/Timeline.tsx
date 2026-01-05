@@ -16,6 +16,13 @@ const Timeline = ({ footprints }: TimelineProps) => {
             <div className={styles.timelineContent}>
               <h3>{footprint.company}</h3>
               <p>{footprint.role}</p>
+              {footprint.achievements && footprint.achievements.length > 0 && (
+                <ul className={styles.achievements}>
+                  {footprint.achievements.map((achievement, idx) => (
+                    <li key={idx}>{achievement}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}

@@ -50,6 +50,7 @@ export interface Footprint {
   company: string;
   role: string;
   startYear: string;
+  achievements?: string[];
 }
 
 export interface ResumeData {
